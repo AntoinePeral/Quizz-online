@@ -13,8 +13,17 @@ INSERT INTO "tag" ("name") VALUES
 ('Philosophie'),
 ('Minouche');
 
-
 INSERT INTO "level" ("name") VALUES
 ('Facile'),
 ('Moyen'),
 ('Difficile');
+
+INSERT INTO "answer" ("description") VALUES
+('les chaussetes de larchi duchesse sont elles seches ? Oui' ),
+('42 le nombre magique' ),
+('Noé biensur');
+
+INSERT INTO "question" ("description", "anecdote", "wiki",  "level_id", "quiz_id") VALUES
+('lhistoire de la vie', 'toto', 'tata', 1, 1),
+('huit cent', ' lorain', 'ipsum', 2, 2),
+('Noé', 'son arche', 'ses animaux', 3,3);

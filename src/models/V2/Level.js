@@ -7,7 +7,7 @@ class Level extends Model {}
 
 const levelProperties = {       //Premier argument ici : va décrire les champs qu'on souhaite avoir
     name: {                     //On veut unt champ "name" 
-        type: DataTypes.STRING, //Avec un type STRINg
+        type: DataTypes.STRING, //Avec un type STRING
         allowNull: false        //On n'autorise pas une valeur null
     }
 }
@@ -17,8 +17,7 @@ const levelOptions = {          //Le deuxième argument va contenir les options 
     tableName: 'level'          //On doit préciser le nom de notre table dans la db, pour que Sequelize fasse le lien
 }
 
-Level.init(levelProperties, levelOptions);
+Level.init(levelProperties, levelOptions); //.init est une méthode de classe static provenant de la classe mère "Model"
 
-//On exporte notre modèle
 module.exports = Level;
 
